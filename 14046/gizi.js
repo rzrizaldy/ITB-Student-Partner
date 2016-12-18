@@ -12,7 +12,6 @@ function Gizi (element,name) {
 	//Membuat tampilan
 	this.init = function(){
 		//window
-		this.common("");
 		this.el.setAttribute("class","gizi_window");
 		this.el.style.display="none";
 
@@ -30,8 +29,6 @@ function Gizi (element,name) {
 		param1=document.createElement("input");
 		param1.setAttribute("style","width: 70%;margin-bottom: 10px;");
 		param1.setAttribute("onchange",this.name+".tunggutampil(this)");
-		//param1.setAttribute("onkeypress",this.name+".cari(this.value)");
-		//param1.setAttribute("onkeypress","alert(this.value)");
 		panel1.appendChild(param1);
 		panel1.appendChild(this.listcari);
 
@@ -66,7 +63,7 @@ function Gizi (element,name) {
 		param1=document.createElement("link");
 		param1.setAttribute("rel","stylesheet");
 		param1.setAttribute("type","text/css");
-		param1.setAttribute("href","gizi.css");
+		param1.setAttribute("href",gizi_get_host()+"gizi.css");
 		this.el.appendChild(param1);
 
 		this.el.appendChild(panel1);
@@ -96,16 +93,12 @@ function Gizi (element,name) {
 	//memangkas teks a hanya tinggal sepanjang b ditambah "..."
 	this.pangkas=(a,b)=>a.length<b?a:a.slice(0,b-3).replace(/ [^ ]+$/,"")+"...";
 
-	//this.label=a=>"("+a.replace(/^\((.+)\).*$/, "$1").split`-`.map(b=>b[0].toUpperCase()+b.slice(1)).join` `+") "+a.replace(/^\(.+\)/,"");
-
 	//menambah makanan/minuman ke list yang dikonsumsi
 	this.addtolist=function(id){
 
 		var a=this.foods[id];
 		a.jumlah=100;
-		//console.log(a);
 		this.listmakan.push(a);
-		//console.log(this.listmakan);
 		var iid=this.listmakan.length-1;
 
 		var tr = document.createElement("tr");
@@ -218,7 +211,7 @@ function Gizi (element,name) {
 		}
 				
 		
-		request.open("GET","gizi.php?fd="+query);
+		request.open("GET",gizi_get_host()+"gizi.php?fd="+query);
 		//request.setRequestHeader('Content-Type',"application/x-www-form-urlencoded");
 		request.send();
 		//this.buff[query]=JSON.parse(request.responseText);
@@ -235,38 +228,6 @@ function Gizi (element,name) {
 		}
 
 	};
-
-
-	this.common = function (query){
-		query=query.toLowerCase();
-		for(a in this.buff){
-			if(a==query){
-				this.foods = this.buff[a];
-				return this.foods;
-			}
-		}
-		var request;
-		if(window.XMLHttpRequest){
-			request=new XMLHttpRequest();
-		}else{
-			request=new ActiveXObject("Microsoft.XMLHTTP");
-		}
-		
-		request.onreadystatechange=function(){
-			if(request.readyState==4){
-			}
-		}
-				
-		
-		request.open("GET","common2.php",0);
-		request.send();
-		for(key in (JSON.parse(request.responseText))){
-			this.buff[key]=(JSON.parse(request.responseText))[key];
-		}
-
-
-	};
-
 
 	this.gizi_bar=(a,b,c)=>{
 		d=(a+b+c==0)?1:0;
@@ -297,4 +258,14 @@ __gizi_buruk__=(r,n,q)=>{
 		eval(n+".foods= "+r);
 	}
 	eval(n+".tampil()");
+}
+
+function gizi_get_host(){
+	return 'http://pa.pe.hu/'; //lokasi API
+
+	var url = location.href;
+	console.clear();
+	url = url.split('/');
+	url[url.length-1] = "";
+	return url.join("/");
 }
