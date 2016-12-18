@@ -1,0 +1,248 @@
+/********************************************************
+	******************** Halaman Login *************************
+	********************************************************/
+
+.wrapperlogin {
+    background: #50a3a2;
+    background: -webkit-linear-gradient(bottom left, #091212 0%, #53e3a6 100%);
+    background: -moz-linear-gradient(bottom left, #091212 0%, #53e3a6 100%);
+    background: linear-gradient(to top right, #091212 0%, #53e3a6 100%);
+    font-color: #fff;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    margin-top: 0;
+    overflow: hidden;
+}
+
+.wrapperlogin.form-success .containerlogin h1 {
+    -webkit-transform: translateY(85px);
+    -moz-transform: translateY(85px);
+    transform: translateY(85px);
+}
+
+.containerlogin {
+    max-width: 600px;
+    margin: 0 auto;
+    height: auto;
+    text-align: center;
+    padding: 7%;
+    background-color: rgba(15, 31, 31, 0.5);
+}
+
+.containerlogin h1 {
+    font-size: 40px;
+    -webkit-transition-duration: 1s;
+    transition-duration: 1s;
+    -webkit-transition-timing-function: ease-in-put;
+    transition-timing-function: ease-in-put;
+    font-weight: 200;
+}
+
+form {
+    padding: 20px 0;
+    position: relative;
+    z-index: 2;
+}
+
+form input {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    outline: 0;
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    background-color: rgba(255, 255, 255, 1);
+    width: 250px;
+    border-radius: 3px;
+    padding: 10px 15px;
+    margin: 0 auto 10px auto;
+    display: block;
+    text-align: center;
+    font-size: 16px;
+    color: #000;
+    -webkit-transition-duration: 0.25s;
+    -moz-transition-duration: 0.25s;
+    transition-duration: 0.25s;
+    font-weight: 300;
+}
+
+form input:hover {
+    background-color: rgba(255, 255, 255, 0.4);
+}
+
+form input:focus {
+    background-color: white;
+    width: 300px;
+    color: #53e3a6;
+}
+
+
+/* Tombol Submit */
+
+form button {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    outline: 0;
+    background-color: white;
+    border: 0;
+    padding: 10px 15px;
+    color: #000;
+    border-radius: 3px;
+    width: auto;
+    cursor: pointer;
+    font-size: 18px;
+    -webkit-transition-duration: 0.25s;
+    transition-duration: 0.25s;
+}
+
+form button:hover {
+    background-color: #091212;
+    color: #53e3a6;
+}
+
+.ball {
+    width: 10px;
+    height: 10px;
+    margin: 10px auto;
+    border-radius: 50px;
+}
+
+.ball:nth-child(1) {
+    background: #ff005d;
+    -webkit-animation: right 1s infinite ease-in-out;
+    -moz-animation: right 1s infinite ease-in-out;
+    animation: right 1s infinite ease-in-out;
+}
+
+.ball:nth-child(2) {
+    background: #35ff99;
+    -webkit-animation: left 3.1s infinite ease-in-out;
+    -moz-animation: left 3.1s infinite ease-in-out;
+    animation: left 3.1s infinite ease-in-out;
+}
+
+.ball:nth-child(3) {
+    background: #008597;
+    -webkit-animation: right 1.05s infinite ease-in-out;
+    -moz-animation: right 1.05s infinite ease-in-out;
+    animation: right 1.05s infinite ease-in-out;
+}
+
+.ball:nth-child(4) {
+    background: #ffcc00;
+    -webkit-animation: left 2.15s infinite ease-in-out;
+    -moz-animation: left 2.15s infinite ease-in-out;
+    animation: left 2.15s infinite ease-in-out;
+}
+
+@-webkit-keyframes right {
+    0% {
+        -webkit-transform: translate(-15px);
+    }
+    50% {
+        -webkit-transform: translate(15px);
+    }
+    100% {
+        -webkit-transform: translate(-15px);
+    }
+}
+
+@-webkit-keyframes left {
+    0% {
+        -webkit-transform: translate(15px);
+    }
+    50% {
+        -webkit-transform: translate(-15px);
+    }
+    100% {
+        -webkit-transform: translate(15px);
+    }
+}
+
+@-moz-keyframes right {
+    0% {
+        -moz-transform: translate(-15px);
+    }
+    50% {
+        -moz-transform: translate(15px);
+    }
+    100% {
+        -moz-transform: translate(-15px);
+    }
+}
+
+@-moz-keyframes left {
+    0% {
+        -moz-transform: translate(15px);
+    }
+    50% {
+        -moz-transform: translate(-15px);
+    }
+    100% {
+        -moz-transform: translate(15px);
+    }
+}
+
+@keyframes right {
+    0% {
+        transform: translate(-15px);
+    }
+    50% {
+        transform: translate(15px);
+    }
+    100% {
+        transform: translate(-15px);
+    }
+}
+
+@keyframes left {
+    0% {
+        transform: translate(15px);
+    }
+    50% {
+        transform: translate(-15px);
+    }
+    100% {
+        transform: translate(15px);
+    }
+}
+
+.error-mes {
+    font-size: 16px;
+    background-color: #000;
+    color: #fff;
+    margin-top: 10px;
+    -moz-animation: cssAnimation 0s ease-in 5s forwards;
+    -webkit-animation: cssAnimation 0s ease-in 5s forwards;
+    -o-animation: cssAnimation 0s ease-in 5s forwards;
+    animation: cssAnimation 0s ease-in 5s forwards;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+}
+
+@keyframes cssAnimation {
+    to {
+        width: 0;
+        height: 0;
+        overflow: hidden;
+    }
+}
+
+@-webkit-keyframes cssAnimation {
+    to {
+        width: 0;
+        height: 0;
+        display: none;
+    }
+}
+
+@-moz-keyframes cssAnimation {
+    to {
+        width: 0;
+        height: 0;
+        display: none;
+    }
+}

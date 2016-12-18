@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Institut Teknologi Bandung</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link href="layout/styles/layout.css" rel="stylesheet" type="text/css" media="all">
+    <meta charset="utf-8">
+    <style>
+    #map {
+        height: 500px;
+        width: 100%;
+    }
+    </style>
+</head>
+
+<body id="top">
+    <!-- ################################################################################################ -->
+    <!-- ################################################################################################ -->
+    <!-- ################################################################################################ -->
+    <!-- Top Background Image Wrapper -->
+    <div class="bgded overlay" style="background-image:url('images/bg1.png'); padding-top:7% !important">
+        <!-- ################################################################################################ -->
+        <div class="wrapper row1">
+            <header id="header" class="hoc clear">
+                <!-- ################################################################################################ -->
+                <div id="logo" class="fl_left">
+                    <h1><a href="index.html">Communicare</a></h1>
+                </div>
+                <!-- ################################################################################################ -->
+            </header>
+        </div>
+        <!-- ################################################################################################ -->
+        <!-- ################################################################################################ -->
+        <!-- ################################################################################################ -->
+        <div class="wrapper row2">
+            <div id="breadcrumb" class="hoc clear">
+                <!-- ################################################################################################ -->
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="itb.html">Institut Teknologi Bandung</a></li>
+                </ul>
+                <!-- ################################################################################################ -->
+            </div>
+        </div>
+        <!-- ################################################################################################ -->
+    </div>
+    <!-- End Top Background Image Wrapper -->
+    <!-- ################################################################################################ -->
+    <!-- ################################################################################################ -->
+    <!-- ################################################################################################ -->
+    <div class="wrapper row3">
+        <main class="hoc container clear">
+            <!-- main body -->
+            <!-- ################################################################################################ -->
+            <div class="content">
+                <!-- ################################################################################################ -->
+                <h1 style="font-weight: bold">Institut Teknologi Bandung</h1>
+                <hr>
+                <p><strong>Profil</strong></p>
+                <img id="hmif" class="imgr borderedbox inspace-5" src="images/itb.png">
+                <style>
+                #hmif {
+                    width: 250px;
+                    height: 250px;
+                }
+                </style>
+                <p>Institut Teknologi Bandung (ITB) adalah sebuah perguruan tinggi negeri yang berkedudukan di Kota Bandung. Nama ITB diresmikan pada tanggal 2 Maret 1959. Sejak tanggal 14 Oktober 2013 ITB menjadi Perguruan Tinggi Negeri Badan Hukum (PTN BH) yang memiliki otonomi pengelolaan dalam akademik dan non-akademik. ITB telah memiliki 20 program studi yang terakreditasi secara internasional (sembilan di antaranya dari ABET).</p>
+                <p>Kampus utama ITB saat ini merupakan lokasi dari sekolah tinggi teknik pertama di Indonesia sekaligus lembaga pendidikan tinggi pertama di Hindia Belanda.Walaupun masing-masing institusi pendidikan tinggi yang mengawali ITB memiliki karakteristik dan misi masing-masing, semuanya memberikan pengaruh dalam perkembangan yang menuju pada pendirian ITB.</p>
+                <p><strong>Rektor ITB saat ini </strong>adalah Prof. Dr. Ir. Kadarsah Suryadi, DEA, untuk masa jabatan 2015-2020.</p>
+                <hr>
+                <!-- ############################ -->
+                <p align="center"><strong>Lokasi ITB Ganesha</strong></p>
+                <div id="map"></div>
+                <script>
+                function initMap() {
+                    var uluru = {
+                        lat: -6.8914798,
+                        lng: 107.6106589
+                    };
+                    var map = new google.maps.Map(document.getElementById('map'), {
+                        zoom: 15,
+                        center: uluru
+                    });
+                    var marker = new google.maps.Marker({
+                        position: uluru,
+                        map: map
+                    });
+                    var contentString = '<div class="info-window">' +
+                        '<h3>Institut Teknologi Bandung</h3>' +
+                        '<div class="info-content">' +
+                        '<p>Institut Teknologi Bandung (ITB) adalah sebuah perguruan tinggi negeri yang berkedudukan di Kota Bandung. Nama ITB diresmikan pada tanggal 2 Maret 1959. Sejak tanggal 14 Oktober 2013 ITB menjadi Perguruan Tinggi Negeri Badan Hukum (PTN BH) yang memiliki otonomi pengelolaan dalam akademik dan non-akademik. ITB telah memiliki 20 program studi yang terakreditasi secara internasional (sembilan di antaranya dari ABET).</p>' +
+                        '</div>' +
+                        '</div>';
+
+                    var infowindow = new google.maps.InfoWindow({
+                        content: contentString,
+                        maxWidth: 400
+                    });
+
+                    marker.addListener('click', function() {
+                        infowindow.open(map, marker);
+                    });
+                }
+                </script>
+                <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCBlBR3jRw9h6GKH_RIinVfcSwRMgCrm80&callback=initMap">
+                </script>
+                <hr>
+                <p>Menyadari akan keterbatasan lahan Kampus Ganesha dikaitkan dengan meningkatnya kebutuhan sarana dan prasarana untuk mewujudkan visi akademiknya, maka pada sekitar tahun 2010 diterapkanlah kebijakan ITB multikampus yang memunculkan istilah "On-G campus" dan "Off-G campus". Istilah "On-G campus" merujuk pada Kampus ITB Ganesha sedangkan kampus-kampus ITB di luar itu disebut sebagai "Off-G campus". Kampus ITB Off-G yang sudah terwujud dan mulai dibangun adalah Kampus ITB Jatinangor. "ITB Off-G campus" lainnya yang sedang direncanakan adalah Kampus ITB Bekasi dan Kampus ITB Walini.</p>
+                <p>Asrama mahasiswa, perumahan dosen, dan kantor pusat administrasi tidak terletak di kampus utama namun masih dalam jangkauan yang mudah untuk ditempuh. Fasilitas yang tersedia di kampus di antaranya toko buku, kantor pos, kantin, bank, dan klinik.</p>
+                <p>Selain ruangan kuliah, laboratorium, bengkel dan studio, ITB memiliki sebuah galeri seni yaitu Galeri Soemardja, fasilitas olahraga, dan sebuah Campus Center. Di dekat kampus juga terdapat Masjid Salman untuk beribadah dan aktivitas keagamaan umat Islam di ITB. Untuk mendukung pelaksanaan aktivitas akademik dan riset, terdapat fasilitas-fasilitas pendukung akademik, di antaranya Perpustakaan Pusat (dengan koleksi sekira 150.000 buku dan 1000 judul jurnal), Sarana Olah Raga, Sasana Budaya Ganesha, Pusat Bahasa, pusat layanan komputer (ComLabs). ITB juga memiliki Observatorium Bosscha (salah satu fasilitas dari Kelompok Keahlian Astronomi FMIPA), terletak 11 kilometer di sebelah utara Bandung.</p>
+                <!-- ################################################################################################ -->
+            </div>
+            <!-- ################################################################################################ -->
+            <!-- / main body -->
+            <div class="clear"></div>
+        </main>
+    </div>
+    <!-- ################################################################################################ -->
+    <!-- ################################################################################################ -->
+    <!-- ################################################################################################ -->
+    <div class="wrapper row4" style="background-color: #ccae52">
+        <footer id="footer" class="hoc clear">
+            <!-- ################################################################################################ -->
+            <div class="one_third first">
+                <h3 class="heading">Communicare</h3>
+                <ul class="faico clear">
+                    <li><a class="faicon-facebook" href="#" style="color: white"><i class="fa fa-facebook"></i></a></li>
+                    <li><a class="faicon-twitter" href="#" style="color: white"><i class="fa fa-twitter"></i></a></li>
+                    <li><a class="faicon-linkedin" href="#" style="color: white"><i class="fa fa-linkedin"></i></a></li>
+                    <li><a class="faicon-google-plus" href="#" style="color: white"><i class="fa fa-google-plus"></i></a></li>
+                </ul>
+            </div>
+            <div class="one_third">
+                &nbsp
+            </div>
+            <div class="one_third">
+                <ul class="nospace meta" style="color: white">
+                    <li class="btmspace-15"><i class="fa fa-phone"></i> +62 857 744X XXXX</li>
+                    <li><i class="fa fa-envelope-o" style="color: white"></i> 18214040@std.stei.itb.ac.id</li>
+                </ul>
+            </div>
+            <!-- ################################################################################################ -->
+        </footer>
+    </div>
+    <!-- ################################################################################################ -->
+    <!-- ################################################################################################ -->
+    <!-- ################################################################################################ -->
+    <!-- ################################################################################################ -->
+    <!-- ################################################################################################ -->
+    <!-- ################################################################################################ -->
+    <a id="backtotop" href="#top"><i class="fa fa-chevron-up"></i></a>
+    <!-- JAVASCRIPTS -->
+    <script src="layout/scripts/jquery.min.js"></script>
+    <script src="layout/scripts/jquery.backtotop.js"></script>
+    <script src="layout/scripts/jquery.mobilemenu.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,88 @@
+/**
+.gizi_panel2 *[title]:hover:after {
+  content: attr(title);
+  margin-top: 20px;
+  padding: 4px 8px;
+  color: #333;
+  position: absolute;
+  z-index: 20;
+  white-space: nowrap;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  -moz-box-shadow: 0px 0px 4px #222;
+  -webkit-box-shadow: 0px 0px 4px #222;
+  box-shadow: 0px 0px 4px #222;
+  background: #FFF59D;
+}/**/
+/**/
+.gizi_window *::-webkit-scrollbar { 
+  width: 0px;
+  background: #FDD835;
+  color: red;
+}/**/
+
+.gizi_panel1{
+  text-align: left;
+  width: 30%;
+  margin: 5px;
+  padding:3px;
+  white-space: nowrap;
+  font-size: 12px;
+  
+}
+
+.gizi_panel2{
+  text-align: left;
+  min-width: 40%;
+  margin: 5px;
+  width: auto;
+  padding:3px;
+  font-size: 12px;
+  overflow-y: scroll;
+}
+.gizi_panel3{
+  text-align: left;
+  margin: 5px;
+  width: 30%;
+  font-size: 12px;
+  padding:3px;
+}
+.gizi_window{
+  width: 100%;
+  display: inline-flex;
+  height: 390px;
+  cursor: default;
+  font-family: arial;
+  background: #FFEB3B;
+  margin: 0px;
+}
+.gizi_window table{
+  font-size: 12px;
+  border:  2px solid #795548;
+  border-collapse: collapse;
+  display: ;width:95%;
+}
+
+.gizi_window table tr:nth-child(odd){
+  background: #FDD835;
+}
+.gizi_window table tr:nth-child(even){
+  background: #FFEE58;
+}
+
+.gizi_window .gizi_tip:hover{
+  background: #F9A825;
+}
+.gizi_window .gizi_tip:active{
+  background: #F57F17;
+}
+.gizi_tip{
+  border-bottom: 1px solid #795548; 
+}
+
+.gizi_panel_border {
+  border:  2px solid #795548;
+  border-radius: 5px;
+  padding: 5px;
+}

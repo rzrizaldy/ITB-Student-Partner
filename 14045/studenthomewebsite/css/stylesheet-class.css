@@ -1,0 +1,197 @@
+html {
+	font-family: 'Raleway', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: 'Playfair Display', serif;
+	font-weight: 700;
+}
+
+h1 {
+	font-size: 30px;
+	font-weight: 500;
+}
+
+h2{
+	font-size: 40px;
+	font-weight: 500;
+}
+
+h3{
+	font-family: 'Raleway', sans-serif;
+	font-size: 20px;
+	font-weight: 400;
+}
+
+span {
+	font-size: 20px;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+[class*="col-"] {
+    float: left;
+    /*padding: 15px;*/
+    /*border: 1px solid black;*/
+}
+
+.row::after {
+	width: 100%;
+    content: "";
+    clear: both;
+    display: block;
+}
+
+.menubar{
+	position: fixed;
+	background-color: #111;
+	color: #fff;
+	height: 100vh;
+	text-align: center;
+	padding-top: 20px;
+	padding-left: 10px;
+	box-shadow: inset -5px 0px 10px #0a0a0a;
+}
+
+.container{
+	width: 100%;
+	padding-left: 405px;
+}
+
+.mainbody{
+	width: 100%;
+}
+
+.menu{
+	padding: 10px;
+	padding-top: 15px;
+}
+
+.navigator{
+	position: fixed;
+	height: 100vh;
+	width: 330px;
+	background-color: #222;
+	box-shadow: inset -6px 0px 12px #0c0c0c;
+	margin-left: 75px;
+}
+
+.navigatorhead{
+	height: 160px;
+	background-image: url(../images/classbg.jpg);
+	background-size: cover;
+}
+
+.navigatortitle{
+	padding-top: 40px;
+	color: #fff;
+	text-align: center;
+}
+
+.navigatorelement{
+	margin-left: 7px;
+	margin-right: 7px;
+	border-bottom: 1px solid #777;
+	height: 53px;
+	padding-top: 15px;
+	padding-left: 7px;
+	padding-right: 7px;
+	font-size: 16px;
+	color: #eee;
+}
+
+.navigatorelement a{
+	font-size: 16px;
+	color: #eee;
+	text-decoration: none;
+}
+
+.tableclass{
+	table-layout:fixed;
+	width: 65px;
+	overflow:hidden;
+	white-space: nowrap;
+}
+
+.tablename{
+	table-layout:fixed;
+	overflow:hidden;
+	white-space: nowrap;
+}
+
+.contents{
+	background-color: #aaaaaa;
+}
+
+.bodycontents{
+	padding: 20px;
+	background-color: #f8f8f8;
+	height: 100vh;
+	overflow-y: scroll;
+}
+
+.bodybar{
+	padding-top: 10px;
+	height: 55px;
+}
+
+.bodymenu{
+	list-style-type: none;
+}
+
+.bodymenu li{
+	display: inline;
+	padding: 10px;
+	width: 50px;
+}
+
+.bodymenu li a{
+	color: #444;
+	display: inline;
+	text-decoration: none;
+}
+
+.bodymenu li:hover{
+	color: #aaa;
+}
+
+.bodyelements{
+	box-shadow: 0px 0px 7px #999;
+	background-color: #fefefe;
+	margin-top: 5px;
+	margin-bottom: 15px;
+	border-radius: 2px;
+	padding: 15px;
+	padding-left: 25px;
+	padding-bottom: 20px;
+}
+
+.bodyelements h1{
+	padding-bottom: 20px;
+}
+
+.bodysubelement{
+	margin-top: 8px;
+	margin-bottom: 8px;
+	padding: 18px;
+	padding-top: 14px;
+	padding-bottom: 20px;
+	border-left: 3px solid #333;
+}

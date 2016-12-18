@@ -1,0 +1,67 @@
+#map {
+    height: 86%;
+    padding-top: 7%;
+}
+
+html,
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+#floating-panel {
+    position: absolute;
+    left: 5px;
+    bottom: 5px;
+    z-index: 5;
+    background-color: #fff;
+    padding: 10px 30px 10px 30px;
+    border: 2px solid #000;
+    border-radius: 10px;
+    text-align: center;
+    font-family: 'Boogaloo', cursive;
+    font-size: 40px;
+    line-height: 30px;
+}
+
+.gm-style h1 {
+    font-family: 'Chewy', cursive;
+    border-bottom: 2px solid #000;
+    margin-bottom: auto;
+    text-align: center;
+}
+
+p {
+    font-family: 'Boogaloo', cursive;
+    font-size: 18px;
+    min-height: 25px;
+    margin-top: auto;
+    text-align: justify-all;
+}
+
+button {
+    font-family: 'Boogaloo', cursive;
+    font-size: 15px;
+    position: absolute;
+    margin-bottom: 5px;
+}
+
+.jalan {
+    margin-left: 85px;
+}
+
+text {
+    font-family: 'Boogaloo', cursive;
+    font-size: 15px;
+    float: left;
+}
+
+.gm-style img {
+    max-width: 480px;
+    margin: 5px 0px;
+}
+
+td {
+    width: 500px;
+}

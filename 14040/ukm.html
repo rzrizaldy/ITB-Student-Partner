@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Himpunan Mahasiswa Jurusan</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link href="layout/styles/layout.css" rel="stylesheet" type="text/css" media="all">
+    <meta charset="utf-8">
+    <style>
+    #map {
+        height: 500px;
+        width: 100%;
+    }
+    </style>
+</head>
+
+<body id="top">
+    <!-- ################################################################################################ -->
+    <!-- ################################################################################################ -->
+    <!-- ################################################################################################ -->
+    <!-- Top Background Image Wrapper -->
+    <div class="bgded overlay" style="background-image:url('images/bg1.png'); padding-top:7% !important">
+        <!-- ################################################################################################ -->
+        <div class="wrapper row1">
+            <header id="header" class="hoc clear">
+                <!-- ################################################################################################ -->
+                <div id="logo" class="fl_left">
+                    <h1><a href="index.html">Communicare</a></h1>
+                </div>
+                <!-- ################################################################################################ -->
+            </header>
+        </div>
+        <!-- ################################################################################################ -->
+        <!-- ################################################################################################ -->
+        <!-- ################################################################################################ -->
+        <div class="wrapper row2">
+            <div id="breadcrumb" class="hoc clear">
+                <!-- ################################################################################################ -->
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="ukm.html">Daftar Unit Kegiatan Mahasiswa</a></li>
+                </ul>
+                <!-- ################################################################################################ -->
+            </div>
+        </div>
+        <!-- ################################################################################################ -->
+    </div>
+    <!-- End Top Background Image Wrapper -->
+    <!-- ################################################################################################ -->
+    <!-- ################################################################################################ -->
+    <!-- ################################################################################################ -->
+    <div class="wrapper row3">
+        <main class="hoc container clear">
+            <!-- main body -->
+            <!-- ################################################################################################ -->
+            <div class="content">
+                <!-- ################################################################################################ -->
+                <h1 style="font-weight: bold; text-align: center;">Cari Informasi Unit Kegiatan Mahasiswa</h1>
+                <hr>
+            </div>
+            <div style="text-align: center;">
+                <center><strong>Seni dan Budaya</strong>
+                    <form action="client.php" method="get">
+                        <select name="id">
+                            <option value="'DEBUST'">UKB "Debust" ITB</option>
+                            <option value="'UKA'">UKA</option>
+                            <option value="'KPA'">KPA</option>
+                            <option value="'LSS'">LSS</option>
+                            <option value="'UKM'">UKM</option>
+                            <option value="'PSTK'">PSTK</option>
+                            <option value="'PSM'">PSM</option>
+                            <option value="'MBWG'">MBWG</option>
+                            <option value="'MGG'">MGG</option>
+                            <option value="'STEMA'">STEMA</option>
+                            <option value="'UKSS'">UKSS</option>
+                            <option value="'UBALA'">UBALA</option>
+                            <option value="'UKJ'">UKJ</option>
+                            <option value="'LOEDROEK'">LOEDROEK</option>
+                            <option value="'ISO'">ISO</option>
+                            <option value="'APRES'">APRES</option>
+                            <option value="'UKIR'">UKIR</option>
+                            <option value="'MUSI'">MUSI</option>
+                            <option value="'UKSU'">UKSU</option>
+                            <option value="'LS'">LS</option>
+                            <option value="'UKB'">UKB</option>
+                            <option value="'UKMR'">UKMR</option>
+                            <option value="'SAHANG'">SAHANG</option>
+                        </select>
+                        <br>
+                        <input type="submit" value="Temukan">
+                    </form>
+                </center>
+                <hr>
+                <div style="text-align: center;">
+                    <center><strong>Olahraga</strong>
+                        <form action="client.php" method="get">
+                            <select name="id">
+                                <option value="'PS'">PS</option>
+                                <option value="'UBT'">UBT</option>
+                                <option value="'UT'">Unit Tenis</option>
+                                <option value="'AIKIDO'">AIKIDO</option>
+                                <option value="'KARATE'">KARATE</option>
+                                <option value="'JUDO'">JUDO</option>
+                                <option value="'URPA'">URPA</option>
+                                <option value="'NAUTIKA'">NAUTIKA</option>
+                                <option value="'PERISAI_DIRI'">Perisai Diri</option>
+                                <option value="'TARUNG_DERAJAT'">Tarung Derajat</option>
+                                <option value="'UNIT_SOFTBALL'">Unit Softball</option>
+                                <option value="'UNIT_BRIDGE'">Unit Bridge</option>
+                                <option value="'PERCAMA'">PERCAMA</option>
+                                <option value="'KENDO'">KENDO</option>
+                                <option value="'HIMATUL_IMAN'">Hikmatul Iman</option>
+                                <option value="'UATM'">UATM</option>
+                                <option value="'PASOPATI'">PASOPATI</option>
+                                <option value="'KEMPO'">KEMPO</option>
+                                <option value="'TAEKWONDO'">TAEKWONDO</option>
+                                <option value="'HOKI'">HOKI</option>
+                                <option value="'CAPOEIRA'">CAPOEIRA QUIZUMBA ITB</option>
+                                <option value="'ST'">Syufu Taesyukan</option>
+                                <option value="'ATLAS'">ATLAS</option>
+                                <option value="'UBV'">UBV</option>
+                                <option value="'UBG'">UBG</option>
+                                <option value="'GB'">Ganesha Bicycle</option>
+                                <option value="'UJITEB'">UJITEB</option>
+                            </select>
+                            <br>
+                            <input type="submit" value="Temukan">
+                        </form>
+                    </center>
+                </div>
+                <hr>
+                <div style="text-align: center;">
+                    <center><strong>Kajian</strong>
+                        <form action="client.php" method="get">
+                            <select name="id">
+                                <option value="'HATI'">HATI</option>
+                                <option value="'PSIK'">PSIK</option>
+                                <option value="'TIBEN'">TIBEN</option>
+                            </select>
+                            <br>
+                            <input type="submit" value="Temukan">
+                        </form>
+                    </center>
+                </div>
+                <hr>
+                <div style="text-align: center;">
+                    <center><strong>Pendidikan</strong>
+                        <form action="client.php" method="get">
+                            <select name="id">
+                                <option value="'KSEP'">KSEP</option>
+                                <option value="'PRAMUKA'">PRAMUKA</option>
+                                <option value="'MENWA'">MENWA</option>
+                                <option value="'U_GREEN'">U Green</option>
+                                <option value="'KMPA'">KMPA</option>
+                                <option value="'KSR'">KSR</option>
+                                <option value="'SEF'">SEF</option>
+                                <option value="'KOKESMA'">KOKESMA</option>
+                                <option value="'SHARE'">SHARE</option>
+                            </select>
+                            <br>
+                            <input type="submit" value="Temukan">
+                        </form>
+                    </center>
+                </div>
+                <hr>
+                <div style="text-align: center;">
+                    <center><strong>Agama</strong>
+                        <form action="client.php" method="get">
+                            <select name="id">
+                                <option value="'GAMAIS'">GAMAIS</option>
+                                <option value="'KMK'">KMK</option>
+                                <option value="'PMK'">PMK</option>
+                                <option value="'KMB'">KMB</option>
+                                <option value="'KMH'">KMH</option>
+                            </select>
+                            <br>
+                            <input type="submit" value="Temukan">
+                        </form>
+                    </center>
+                </div>
+                <hr>
+                <div style="text-align: center;">
+                    <center><strong>Media</strong>
+                        <form action="client.php" method="get">
+                            <select name="id">
+                                <option value="'GTV'">G TV</option>
+                                <option value="'RK'">Radio Kampus</option>
+                                <option value="'ARC'">ARC</option>
+                                <option value="'8EH'">8eh</option>
+                                <option value="'LFM'">LFM</option>
+                                <option value="'GENSHIKEN'">GENSHIKEN</option>
+                                <option value="'PERSMA'">PERSMA</option>
+                                <option value="'BOULEVARD'">BOULEVARD</option>
+                                <option value="'MG'">MG</option>
+                            </select>
+                            <br>
+                            <input type="submit" value="Temukan">
+                        </form>
+                    </center>
+                </div>
+            </div>
+        </main>
+    </div>
+    <!-- ################################################################################################ -->
+    <!-- ################################################################################################ -->
+    <!-- ################################################################################################ -->
+    <div class="wrapper row4" style="background-color: #ccae52">
+        <footer id="footer" class="hoc clear">
+            <!-- ################################################################################################ -->
+            <div class="one_third first">
+                <h3 class="heading">Communicare</h3>
+                <ul class="faico clear">
+                    <li><a class="faicon-facebook" href="#" style="color: white"><i class="fa fa-facebook"></i></a></li>
+                    <li><a class="faicon-twitter" href="#" style="color: white"><i class="fa fa-twitter"></i></a></li>
+                    <li><a class="faicon-linkedin" href="#" style="color: white"><i class="fa fa-linkedin"></i></a></li>
+                    <li><a class="faicon-google-plus" href="#" style="color: white"><i class="fa fa-google-plus"></i></a></li>
+                </ul>
+            </div>
+            <div class="one_third">
+                &nbsp
+            </div>
+            <div class="one_third">
+                <ul class="nospace meta" style="color: white">
+                    <li class="btmspace-15"><i class="fa fa-phone"></i> +62 857 744X XXXX</li>
+                    <li><i class="fa fa-envelope-o" style="color: white"></i> 18214040@std.stei.itb.ac.id</li>
+                </ul>
+            </div>
+            <!-- ################################################################################################ -->
+        </footer>
+    </div>
+    <!-- ################################################################################################ -->
+    <!-- ################################################################################################ -->
+    <!-- ################################################################################################ -->
+    <!-- ################################################################################################ -->
+    <!-- ################################################################################################ -->
+    <!-- ################################################################################################ -->
+    <a id="backtotop" href="#top"><i class="fa fa-chevron-up"></i></a>
+    <!-- JAVASCRIPTS -->
+    <script src="layout/scripts/jquery.min.js"></script>
+    <script src="layout/scripts/jquery.backtotop.js"></script>
+    <script src="layout/scripts/jquery.mobilemenu.js"></script>
+</body>
+
+</html>

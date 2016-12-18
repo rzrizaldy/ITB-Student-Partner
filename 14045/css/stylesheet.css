@@ -1,0 +1,95 @@
+html {
+	font-family: 'Raleway', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: 'Playfair Display', serif;
+	font-weight: 700;
+}
+
+h1 {
+	font-size: 53px;
+	line-height: 85px;
+}
+
+span {
+	font-size: 20px;
+	line-height: 20px;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+[class*="col-"] {
+    float: left;
+    /*padding: 15px;*/
+    /*border: 1px solid red;*/
+}
+
+.row::after {
+    content: "";
+    clear: both;
+    display: block;
+}
+
+.header{
+	height: 100vh;
+	background-image: url("../images/indexbg.jpg");
+	background-size: cover;
+	background-position: bottom;
+}
+
+label{
+	font-size: 18px;
+	font-weight: 300;
+}
+
+.loginform{
+	height: 85%;
+	margin-top: 3.75%;
+	margin-bottom: 3.75%;
+	color: #fff;
+	background-color: #111;
+	text-align: center;
+	box-shadow: 0px 0px 15px #000;
+}
+
+.login{
+	margin: 10%;
+}
+
+input{
+	font-family: 'Raleway', sans-serif;
+	font-size: 14px;
+	margin: 13px;
+	width: 90%;
+	padding: 10px 20px;
+	resize: none;
+	border-radius: 3px;
+	border-color: #ddd;
+}
+
+.loginbutton{
+	background-color: #ccc;
+	margin: 5px;
+	font-size: 17px;
+	font-weight: 700;
+	border-radius: 3px;
+	border: none;
+}

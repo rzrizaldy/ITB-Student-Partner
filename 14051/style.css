@@ -1,0 +1,226 @@
+/* Fanni Ulfani/18214051 
+ * Notification */
+
+body {
+    margin: 0;
+    background-color: lightblue;
+}
+
+html {
+    height: 100%;
+    font-size: 10px;
+    font-family: sans-serif;
+}
+
+body {
+    width: 300px;
+    height: 500px;
+    position: relative;
+    left: 0px;
+    background-color: lightblue;
+    padding-top: 8%;
+    padding-right: 20%;
+    padding-left: 20%;
+}
+
+section {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: lightblue;
+    color: white;
+}
+
+
+/* Date */
+
+.game p {
+    z-index: 4;
+    color: white;
+    line-height: 1;
+    font-size: 1.4rem;
+    padding-right: 1rem;
+    text-align: left;
+    margin: 2rem auto;
+    width: 200px;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+
+/* Character image */
+
+.game img {
+    z-index: 3;
+    display: block;
+    max-width: 95%;
+    margin: 2rem auto;
+    position: relative;
+    left: 0;
+    top: 0;
+}
+
+
+/* Background image */
+
+.bg img {
+    z-index: 1;
+    display: block;
+    max-width: 95%;
+    margin: 2rem auto;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+
+/* Progress bar */
+
+.progress {
+    width: 95%;
+    margin: 0 auto;
+    height: 4rem;
+    background-color: black;
+    margin-bottom: 2rem;
+    position: relative;
+}
+
+.current-level {
+    height: 100%;
+    background-color: green;
+}
+
+.progress p {
+    color: white;
+    line-height: 1;
+    font-size: 1.4rem;
+    padding-right: 1rem;
+    text-align: left;
+    width: 200px;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+
+/* Buttons */
+
+button {
+    display: block;
+    border: 0;
+    width: 90%;
+    margin: 0 auto;
+    font-size: 1.4rem;
+    box-shadow: inset 3px 3px 5px rgba(255, 255, 255, 0.75), inset -3px -3px 5px rgba(0, 0, 0, 0.25);
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.10) 40%, rgba(0, 0, 0, 0));
+    background-color: #ddd;
+    cursor: pointer;
+}
+
+.button-bar {
+    height: calc(100% - 395px);
+}
+
+.button-bar button {
+    height: 20%;
+}
+
+.button-bar button:hover {
+    background-color: #fff;
+}
+
+.button-bar button:active {
+    box-shadow: inset 3px 3px 5px rgba(0, 0, 0, 0.25), inset -3px -3px 5px rgba(255, 255, 255, 0.75);
+}
+
+@media (max-width: 600px) {
+    body {
+        width: 100%;
+    }
+}
+
+@media (max-width: 380px) {
+    .button-bar {
+        height: calc(100% - 348.6px);
+    }
+    body {
+        min-height: 480px;
+    }
+}
+
+
+/* Form */
+
+.form p {
+    z-index: 4;
+    color: black;
+    line-height: 1;
+    font-size: 1.4rem;
+    text-align: left;
+    margin: 0;
+    width: 300px;
+    position: relative;
+    left: 20px;
+    top: 0;
+    padding: 20px 0;
+}
+
+input {
+    margin-left: 20px;
+}
+
+input {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    outline: 0;
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    background-color: rgba(255, 255, 255, 1);
+    width: 250px;
+    border-radius: 3px;
+    padding: 10px 15px;
+    display: block;
+    text-align: left;
+    font-size: 16px;
+    color: #000;
+    -webkit-transition-duration: 0.25s;
+    -moz-transition-duration: 0.25s;
+    transition-duration: 0.25s;
+    font-weight: 300;
+}
+
+input:hover {
+    background-color: rgba(255, 255, 255, 0.4);
+}
+
+input:focus {
+    background-color: white;
+    width: 300px;
+    color: #53e3a6;
+}
+
+
+/* Tombol Submit */
+
+form button {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    outline: 0;
+    background-color: white;
+    border: 0;
+    padding: 0;
+    color: #000;
+    border-radius: 3px;
+    width: auto;
+    cursor: pointer;
+    font-size: 18px;
+    -webkit-transition-duration: 0.25s;
+    transition-duration: 0.25s;
+}
+
+form button:hover {
+    background-color: #091212;
+    color: #53e3a6;
+}

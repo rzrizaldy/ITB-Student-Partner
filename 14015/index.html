@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Google Maps</title>
+    <script type="text/javascript" src="http://maps.google.com/maps/api/js?key=AIzaSyB8OhV9Bx7VMcUPXC2jm2FRH2EmYqI2OjU&callback=initMap"></script>
+    <script type="text/javascript" src="js/jquery-1.4.1.min.js"></script>
+    <script type="text/javascript" src="js/markers.js"></script>
+    <link href="./css/mainstyle.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="wrapper-utama">
+        <div class="container-utama">
+            <div id="map"></div>
+            <div>
+                <input type="button" id="showmarkers" value="Show Markers" />
+            </div>
+            <h3>Isi form di bawah ini bila Anda mengetahui unit lain yang belum kami cantumkan</h3>
+            <h5>Gunakan tautan di bagian paling bawah untuk membantu Anda bila diperlukan</h5>
+            <form name="contactform" method="post" action="send_form_email.php">
+                <table width="450px">
+                    <tr>
+                        <td valign="top">
+                            <label for="first_name">Nama Depan*</label>
+                        </td>
+                        <td valign="top">
+                            <input type="text" name="first_name" maxlength="50" size="30">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td valign="top">
+                            <label for="last_name">Nama Belakang*</label>
+                        </td>
+                        <td valign="top">
+                            <input type="text" name="last_name" maxlength="50" size="30">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td valign="top">
+                            <label for="email">Alamat e-mail*</label>
+                        </td>
+                        <td valign="top">
+                            <input type="text" name="email" maxlength="80" size="30">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td valign="top">
+                            <label for="telephone">Nomor Telepon</label>
+                        </td>
+                        <td valign="top">
+                            <input type="text" name="telephone" maxlength="30" size="30">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td valign="top">
+                            <label for="comments">Komentar*</label>
+                        </td>
+                        <td valign="top">
+                            <textarea name="comments" maxlength="1000" cols="25" rows="6"></textarea>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" style="text-align:center">
+                            <input type="submit" value="Submit"> <a href="http://www.gps-coordinates.net/">Google Map Coordinate Finder</a>
+                        </td>
+                    </tr>
+                </table>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>

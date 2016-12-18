@@ -1,0 +1,237 @@
+@import url(http://fonts.googleapis.com/css?family=Signika+Negative:400,700);
+html,
+body {
+    height: 100%;
+    font-family: 'Signika Negative', sans-serif;
+    font-size: 25px;
+}
+
+table,
+th,
+td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    background-color: white !important;
+}
+
+html {
+    background: url('http://content.bikeroar.com/system/content/000/097/254/original/cycling_versus_running.jpg?1429040784') fixed;
+    background-size: 100%;
+}
+
+.white h1 {
+    text-align: center;
+}
+
+.hasil h1 {
+    text-align: center;
+}
+
+a {
+    color: #322bff;
+    text-decoration: underline;
+    transition: 500ms;
+}
+
+a:hover {
+    color: #26a1ff;
+}
+
+p {
+    padding: 0 5%;
+}
+
+img {
+    box-shadow: 0px 0px 4px #000;
+}
+
+#header {
+    background: rgba(255, 255, 255, .5);
+    padding: 1%;
+    overflow: hidden;
+    height: 55px;
+    padding-top: 7% !important;
+}
+
+#header img {
+    float: left;
+    box-shadow: none;
+}
+
+#header ul {
+    list-style: none;
+    float: left;
+    padding-left: 10px;
+    margin-top: 15px;
+}
+
+#header ul li {
+    float: left;
+    margin-left: 10px;
+    font-size: 20px;
+}
+
+#map {
+    height: 75%;
+    box-shadow: 0px 0px 4px #000;
+}
+
+input[type=text] {
+    width: 15%;
+    padding: 6px 12px;
+    margin: 8px 0;
+    box-sizing: border-box;
+}
+
+.controls {
+    margin-top: 10px;
+    border: 1px solid transparent;
+    border-radius: 2px 0 0 2px;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    height: 45px;
+    outline: none;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+}
+
+#origin-input,
+#destination-input {
+    background-color: #fff;
+    font-family: Roboto;
+    font-size: 15px;
+    font-weight: 300;
+    margin-left: 12px;
+    padding: 0 11px 0 13px;
+    text-overflow: ellipsis;
+    width: 200px;
+}
+
+#origin-input:focus,
+#destination-input:focus {
+    border-color: #4d90fe;
+}
+
+#mode-selector {
+    color: #fff;
+    background-color: #4d90fe;
+    margin-left: 12px;
+    padding: 5px 11px 0px 11px;
+}
+
+#mode-selector label {
+    font-family: Roboto;
+    font-size: 13px;
+    font-weight: 300;
+}
+
+#right-panel {
+    font-family: 'Roboto', 'sans-serif';
+    line-height: 30px;
+    padding-left: 10px;
+}
+
+#right-panel select,
+#right-panel input {
+    font-size: 15px;
+}
+
+#right-panel select {
+    width: 75%;
+}
+
+#right-panel i {
+    font-size: 12px;
+}
+
+#right-panel {
+    height: 75%;
+    float: right;
+    width: 390px;
+    overflow: auto;
+}
+
+#map {
+    margin-right: 400px;
+    box-shadow: 0px 0px 4px #000;
+}
+
+@media print {
+    #map {
+        height: 500px;
+        margin: 0;
+        box-shadow: 0px 0px 4px #000;
+    }
+    #right-panel {
+        float: none;
+        width: auto;
+    }
+}
+
+.fullscreen {
+    height: 95%;
+    position: relative;
+}
+
+.fullscreen .header {
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+    width: 100%;
+    color: #fff;
+    text-shadow: 0px 0px 2px #000;
+}
+
+.white {
+    background: #eeeeec;
+    padding: 0 5%;
+}
+
+.nobg {
+    background: none;
+    padding: 0 5%;
+    color: #fff;
+    text-shadow: 0px 0px 4px #000;
+}
+
+.semitrans {
+    background: rgba(255, 255, 255, .5);
+}
+
+.hasil {
+    background: rgba(255, 255, 255, 1) !important;
+}
+
+.dark {
+    color: #eeeeec;
+    background: #010105;
+    padding: 0 5%;
+}
+
+.nopadding {
+    padding: 0;
+}
+
+.floatleft {
+    float: left;
+    margin: 2%;
+}
+
+.floatright {
+    float: right;
+    margin 2%;
+}
+
+.more {
+    text-align: center;
+    font-size: 17px;
+}
+
+.more a {
+    color: #aaa;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.more a:hover {
+    color: #777;
+}

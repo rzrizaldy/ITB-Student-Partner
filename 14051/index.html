@@ -1,0 +1,51 @@
+<!-- Fanni Ulfani/18214051-->
+<!-- Notification -->
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="refresh" content="60">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width">
+    <title>Ambisgotchi</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <section class="game">
+        <img alt="mahasiswi" src="img/sad.png">
+        <div class="bg">
+            <img alt="day/night" src="img/day.png">
+        </div>
+        <p id="date"></p>
+        <div class="progress">
+            <div class="current-level"></div>
+            <p>0/10000</p>
+        </div>
+        <div class="button-bar">
+            <button class="study" data-score="50">Study</button>
+            <button class="homework" data-score="25">Do homework</button>
+            <button class="group" data-score="25">Study group</button>
+            <button class="sleep" data-score="-50">Sleep</button>
+            <button class="play" data-score="-100">Play games</button>
+        </div>
+        <div class="form">
+            <p> (This is a minigame that using notification)</p>
+            <p> Create your own notification:</p>
+            <p> Title :</p>
+            <input type="text" id="notiftitle">
+            <p> Text :</p>
+            <input type="text" id="notiftext">
+            <p> Icon name : (example: img.png) </p>
+            <input type="text" id="notificon">
+            <p> Timeout : (ms) </p>
+            <input type="number" id="notiftimeout">
+            <button class="submit" onclick="formNotification()"> Submit </button>
+        </div>
+    </section>
+    <script src="Notification.js"></script>
+    <script src="main.js"></script>
+</body>
+
+</html>

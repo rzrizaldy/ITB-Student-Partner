@@ -1,0 +1,266 @@
+/**** This CSS is Made for KBBI Project ****/
+
+@font-face {
+    font-family: Comfortaa;
+    src: local("./fonts/Comfortaa-Bold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: Quicksand Bold;
+  src: url("./fonts/Quicksand_Bold.otf") format("opentype");
+}
+@font-face {
+  font-family: Quicksand Book Oblique;
+  src: url("./fonts/Quicksand_Book_Oblique.otf") format("opentype");
+}
+@font-face {
+  font-family: Quicksand Book;
+  src: url("./fonts/Quicksand_Book.otf") format("opentype");
+}
+@font-face {
+  font-family: Quicksand Dash;
+  src: url("./fonts/Quicksand_Dash.otf") format("opentype");
+}
+@font-face {
+  font-family: Quicksand Light;
+  src: url("./fonts/Quicksand_Light.otf") format("opentype");
+}
+@font-face {
+  font-family: Quicksand Light Oblique;
+  src: url("./fonts/Quicksand_Light_Oblique.otf") format("opentype");
+}
+@font-face {
+  font-family: King Basil;
+  src: url("./fonts/King-Basil-Lite.otf") format("OpenType");
+}
+
+html, body {
+	font-size:14px;
+	margin:0;
+	background-color:#fff;
+	line-height: 1.8;
+	color:#000;
+}
+
+h1 {
+	font-size: 30px;
+	font-family: Comfortaa, sans-serif !important;
+	color: #000;
+}
+
+h3 {
+	font-size: 20px;
+	font-family: Comfortaa, sans-serif !important;
+	color: #3B2314;
+	font-weight: lighter;
+}
+
+h4 {
+	font-size: 18px;
+	font-family: Quicksand Bold !important;
+	color: #3B2314;
+	font-weight: bold;
+}
+
+h5 {
+	font-size: 14px;
+	color:#D21D5E;
+}
+
+h6 {
+	font-size: 17px;
+	font-family: Quicksand Bold !important;
+	color: #3B2314;
+	font-weight: lighter;
+}
+
+p {
+	font-size: 14px;
+	font-family: Quicksand Book;
+	color:#000;
+	text-align:	justify;
+	text-justify: auto;
+	z-index:20;
+	line-height: 1.8;
+	height: auto;
+}
+
+p, h1, h2, h3, h4, h5, h6, ul {
+	margin-bottom: 20px;
+}
+
+/*dropdown menu*/
+.dropbtn {
+    background-color: #fff;
+    color: #414042;
+	padding-top:14px;
+    padding-left: 16px;
+    padding-bottom: 16px;
+    padding-right: 16px;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+    font-size: 13px;
+    cursor: pointer;
+	border:none;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: transparent;
+    width: 200px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	font-family: "Comfortaa", Arial;
+	font-size:12px;
+	z-index:9999;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    background-color: #fff;
+}
+
+.dropdown-content a:hover {
+	background-color: rgba(246, 211, 179,.9);
+	color: #D21D5E;
+}
+
+.dropdown-content > li > a:hover, .dropdown-content > li > a:focus {
+    color: #D21D5E;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.navbar {
+	z-index: 9999;
+	border: 0;
+	line-height: 1.42857143 !important;
+	border-radius: 0;
+	font-family: "Comfortaa", Arial;
+	font-size:13px;
+	padding-top: 10px !important;
+	letter-spacing: 1;
+  }
+
+.navbar-nav>li>a {
+	color: #414042 ;
+	padding-left: 25px !important;
+}
+
+.navbar-nav>li>a:focus, .navbar-nav>li>a:hover {
+    text-decoration: none;
+    background-color: #fff;
+    color: #D21D5E;
+}
+
+.navbar-default .navbar-toggle {
+	background-color:transparent !important;
+	border-color: transparent;
+	color: #fff !important;
+}
+
+.nav .open>a, .nav .open>a:focus, .nav .open>a:hover {
+    background-color: #fff;
+    border: none;
+}
+
+#myNavbar {
+	padding: 3%;
+}
+
+.header-con {
+	position: fixed;
+	top: 0;
+	margin-left:0 !important;
+	height:112px;
+	width:100%;
+	padding: 0 !important;
+	background-color:#fff;
+}
+
+.header-logo {
+	margin: 5px;
+	margin-top: 0!important;
+	padding-left: 20px !important;
+}
+
+.menu-header {
+	padding:0%;
+	text-align:center;
+}
+
+.social-header {
+	padding-top:15%;
+	padding-left:0;
+	padding-right:0;
+	margin: 0;
+}
+
+.search-header {
+	padding-top:10%;
+	padding-left:0;
+	padding-right:15%;
+	margin-left:0;
+}
+
+
+/* Social */
+a.btn-social, .btn-social {
+    border-radius: 50%;
+    display: inline-block;
+    max-height: 100px;
+    max-width: 100px;
+	padding-top:30%;
+	padding-left:0;
+	padding-right:8%;
+}
+
+/* Search */
+.stylish-input-group .input-group-addon{
+    background: white !important;
+}
+
+.stylish-input-group .form-control{
+	border-right:0;
+	box-shadow:0 0 0;
+	border-color:#ccc;
+}
+
+.stylish-input-group button{
+    border:0;
+    background:transparent;
+}
+
+.table {
+	border : none;
+}
+
+/* CONTAINER */
+.main-con {
+	position:relative;
+	margin: 0;
+	padding: 50px;
+	padding-top:16% !important;
+	left:0;
+	width:100%;
+	height:100%;
+	background-color: #006600;
+}
+
+.main2-con {
+	position:absolute;
+	margin: 0;
+	padding: 50px;
+	left:0;
+	width:100%;
+	height:100%;
+	background-color: #42f4e2;
+}

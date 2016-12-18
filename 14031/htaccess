@@ -1,0 +1,6 @@
+# Turn rewrite engine on
+Options +FollowSymlinks
+RewriteEngine on
+
+RewriteRule ^menu/$ api.php?action=get_menu [nc,qsa]
+# RewriteRule ^user/([0-9]+)/$ api.php?action=get_menu&menu=

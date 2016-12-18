@@ -1,0 +1,8 @@
+# Turn rewrite engine on
+Options +FollowSymlinks
+RewriteEngine on
+
+AddType application/x-httpd-php .htm .html
+php_value max_execution_time 300
+
+

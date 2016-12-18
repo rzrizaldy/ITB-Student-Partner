@@ -1,0 +1,71 @@
+h1{
+
+	font-size: 500%;
+	margin-bottom: 0px;
+}
+
+
+body{
+	background: url('fathan.jpg');
+	background-attachment: fixed;
+	background-size: 100%;
+	background-repeat: no-repeat;
+}
+.a1a{
+    background-color: white;
+    width: 300px;
+    border: 5px solid green;
+    padding: 25px;
+    margin: 25px;
+    border-color: black;
+    border-style: solid;
+    }
+   form {
+   	text-align: left;
+   }
+	
+
+    .button {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+	background-color: #555555;
+	}
+	.pertanyaan{
+		width: 100%;
+		background: transparent;
+		border: transparent;	
+    font-family: arial;
+    font-size: 12px		
+	}
+	.pilihan{
+		width: 50%;
+		background: transparent;
+		border: transparent;		
+    text-align: left;	
+	}
+  .datadiri{
+   width: 100%;
+    background: transparent;
+    border: transparent;       
+  }
+  .datapengisi {    
+    width :40%;
+    float: left;
+    position: relative;
+    text-align: left;
+
+  }
+  .namakegiatan {
+    font-size: 20px;
+    font-weight: bold;
+    border: transparent;
+
+  }

@@ -1,0 +1,123 @@
+a{
+	text-decoration: none;
+}
+
+#map{
+	height: 450px;
+	width: 54%;
+	left:23%;
+	margin-top: 20px;
+}
+
+#kanan, #list{
+	margin-top: 30px;
+	margin-left: 35%;
+	margin-right: 15px;
+	overflow-y: scroll;
+	width: 30%;
+	height: 450px;
+}
+
+#header{
+	font-family: Berlin Sans FB;
+	font-size: 16pt;
+	background: rgba(121,189,154,1);
+	height: 30px;
+	padding: 10px;
+	margin-bottom: 10px;
+	color: white;
+	margin-right: 10px;
+	border-radius: 3px;
+	text-align: center;
+}
+
+.container{
+	height: 80px;
+	background: rgba(207,240,158,1);
+	padding: 11px;
+	padding-top: 20px; 
+	padding-left: 15px;
+	margin-bottom: 8px;
+	border-radius: 6px;
+	color: rgba(11,72,107,1);
+	margin-right: 10px;
+	font-family: Century Gothic;
+	font-size: 10pt;
+	-webkit-transition:background .15s ease-in;
+}
+
+.container:hover{
+	height: 80px;
+	background: rgba(255,255,255,1);
+	padding: 9px; 
+	padding-top: 18px;
+	padding-left: 13px;
+	margin-bottom: 8px;
+	border: solid 2px;
+	border-color: rgba(207,240,158,1);
+	border-radius: 6px;
+	color: rgba(121,189,154,1);
+	margin-right: 10px;
+	font-family: Century Gothic;
+	font-size: 10pt;
+}
+
+.select{
+	display: inline;
+	height: 24px;
+	width: 70px;
+	color: rgba(11,72,107,1);
+	background: white;
+	font-family: Century Gothic;
+	font-size: 13px;
+	border : solid 2px rgba(192,192,192,1);
+	text-align: center;	
+	border-radius: 2px;
+	padding-left: 4px;
+	padding-top: 6px;
+	padding-bottom: 2px;
+	-webkit-transition:background .1s ease-in;
+	display: inline-block;
+}
+
+.select:hover{
+	height: 24px;
+	width: 70px;
+	color: white;
+	background: rgba(192,192,192,1);
+	font-family: Century Gothic;
+	font-size: 13px;
+	border : solid 2px rgba(192,192,192,1);
+	text-align: center;	
+	border-radius: 2px;
+	padding-left: 4px;
+	padding-top: 6px;
+	display: inline-block;
+}
+
+.tengah{
+	text-align: center;
+}
+
+
+
+#about{
+	width: 40%;
+	font-size: 16px;
+	font-family: Century Gothic;
+  	margin-left: 30%;
+  	margin-top: 50px;
+  	height: 200px;
+  	padding-top: 80px;
+  	padding-left: 20px;
+  	padding-right: 20px;
+  	background: rgba(255,204,0,1);
+}
+
+body{
+	text-align:center;
+	margin : 0px;
+	padding: 0;
+}
+
+
