@@ -3,7 +3,7 @@
 </head>
 <body>
   <?php
-  $conn = new mysqli('sql6.freemysqlhosting.net', 'sql6148511', 'M3VCaH9GzJ', 'sql6148511') 
+  $conn = new mysqli('server424.cloudhost.id', 'rnateami_rzrizaldy', 'Champions1', 'rnateami_oncost')
   or die ('Cannot connect to db');
 
 
