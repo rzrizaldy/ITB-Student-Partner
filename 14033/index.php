@@ -1,6 +1,6 @@
 <?php
 
-require 'jadwal_api.php';
+//require 'jadwal_api.php';
 
 $NIMS = array(
 	//FMIPA
@@ -109,19 +109,31 @@ $faks = array(
 
 $arr=array();
 foreach ($NIMS as $v) {
-	$arr=array_merge($arr, get_tutorial($v));
+	//$arr=array_merge($arr, get_tutorial($v));
 }
-file_put_contents('arr.json', print_r($arr, true));
+//file_put_contents('arr.json', print_r($arr, true));
 
 $jurList = array();
 
 if (isset($_POST['faklist'])) {
 	$jurList = $faks[$_POST['faklist']];
-	$arr = get_tutorial($jurList[0]);
+	//$arr = get_tutorial($jurList[0]);
 } 
 
 if (isset($_POST['jurlist'])) {
-	$arr = get_tutorial($_POST['jurlist']);
+	//$arr = get_tutorial($_POST['jurlist']);
+	if($_POST['jurlist']!="0"){
+		$arr = json_decode(file_get_contents(get_host()."jadwal_api.php?jur=".$_POST['jurlist']));
+		//echo (file_get_contents(get_host()."jadwal_api.php?jur=".$_POST['jurlist']));
+	}
+}
+
+
+function get_host(){
+  $url = $_SERVER['HTTP_HOST'];
+  $uri = explode('/',$_SERVER['REQUEST_URI']);
+  $uri[sizeof($uri)-1] = '';
+  return 'http'.(isset($_SERVER['HTTPS'])?'s':'').'://'.$url.implode('/', $uri);
 }
 
 ?>
@@ -157,9 +169,13 @@ if (isset($_POST['jurlist'])) {
 
 	<form action="" method="post">
 		<select name="jurlist" onchange="this.form.submit()">
-			<?php foreach ($jurList as $key => $value) : ?>
-				<option value="<?php echo $value ?>"><?php echo $value ?></option>
-			<?php endforeach ?>
+			<option selected value="0"></option>
+			<?php
+				foreach ($jurList as $key => $value){
+					echo '<option value="'.$value.'">'.$value.'</option>';
+				}
+			?>
+
 		</select>
 	</form>
 	<table style="width:100%">
@@ -171,12 +187,18 @@ if (isset($_POST['jurlist'])) {
 			<th>Dosen</th>
 			<th>Jadwal (HARI-JAM-RUANG-KEGIATAN)</th>
 		</tr>
-		<?php foreach ($arr as $elmt) : ?>
-			<tr>
-			<?php foreach ($elmt as $key => $value) : ?>
-				<td><?php echo $value ?></td>
-			<?php endforeach ?>
-			</tr>
-		<?php endforeach ?>
+
+		<?php
+			foreach ($arr as $elmt){
+				echo '<tr>';
+				foreach ($elmt as $key => $value){
+					echo '<td>';
+					echo $value;
+					echo '</td>';
+				}
+				echo '</tr>';
+			}
+		?>
+
 	</table>
 </body>
