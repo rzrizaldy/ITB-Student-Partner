@@ -45,7 +45,7 @@ function get_web_page( $url, $cookie )
 
 
 function get_tutorial($ps){
-	$coo="uitb=p81uFVhRSFGjHBgfBlXmAg==; PHPSESSID=3t9eq554dveb9opr2u7ptq9d11; bahasa=id; _ga=GA1.3.2001335151.1481721969; _gat=1";
+	$coo="uitb=p81uFVgoQWG+XlsCFdC7Ag==; bahasa=id; PHPSESSID=8sr8o09iebkot0n261mflhr8l6";
 	$isi=get_web_page("https://ol.akademik.itb.ac.id/frs/displayjadwalkelas.php?fakultas=FMIPA&ps=".$ps , $coo )['content'];
 
 	$arr=array();
@@ -79,5 +79,10 @@ function get_tutorial($ps){
 
 	return $arr;
 }
+
+$jur = (isset($_GET['jur']))?$_GET['jur']:'';
+if($jur=='')echo '[]';
+
+echo json_encode(get_tutorial($jur));
 
 ?>
