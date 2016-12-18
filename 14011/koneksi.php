@@ -3,6 +3,13 @@
 	$user="sql6148424";
 	$passwd="Zj3HzPqsPn";
 	$db="sql6148424";
+	
+	//- UPDATE ----//
+	$host="server424.cloudhost.id";
+	$user="rnateami_progif";
+	$passwd="14046";
+	$db="rnateami_14011";
+	
 	$table="peta_icon";
 	 
 	$koneksi=mysqli_connect($host,$user,$passwd, $db) or die (mysqli_error());
