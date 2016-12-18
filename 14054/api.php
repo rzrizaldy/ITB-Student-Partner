@@ -7,6 +7,12 @@
 	$username = "sql6148460";
 	$password = "9jjWMaRrxz";
 	$dbname = "sql6148460";
+	
+	/* UPDATE */
+	$servername = "sql6.freemysqlhosting.net";
+	$username = "sql6149842";
+	$password = "mvGgqiqp81";
+	$dbname = "sql6149842";
 
 	//Create Connection
 	$conn = mysqli_connect($servername, $username, $password, $dbname);
